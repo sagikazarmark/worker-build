@@ -26,7 +26,7 @@ rustPlatform.buildRustPackage rec {
   nativeBuildInputs = [ makeWrapper ];
 
   postFixup = ''
-    wrapProgram $out/bin/my-rust-tool \
+    wrapProgram $out/bin/worker-build \
       --prefix PATH : ${
         lib.makeBinPath [
           wasm-bindgen-cli
