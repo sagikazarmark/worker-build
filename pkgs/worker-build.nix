@@ -27,6 +27,8 @@ rustPlatform.buildRustPackage rec {
 
   postFixup = ''
     wrapProgram $out/bin/worker-build \
+      --set WASM_BINDGEN_BIN ${wasm-bindgen-cli}/bin/wasm-bindgen \
+      --set WASM_OPT_BIN ${binaryen}/bin/wasm-opt \
       --prefix PATH : ${
         lib.makeBinPath [
           wasm-bindgen-cli
