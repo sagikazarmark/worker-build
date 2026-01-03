@@ -27,6 +27,7 @@ jobs:
 
       - name: Free Disk Space
         uses: wimpysworld/nothing-but-nix@main
+        if: runner.os == 'Linux'
 
       - name: Set up Nix
         uses: cachix/install-nix-action@e8dbd0c99268f4acbb432e443018da10b7ed9bdc # v27
