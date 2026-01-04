@@ -73,12 +73,11 @@ nix.settings = {
 };
 ```
 
-## Supported Platforms
+## Updating
 
-- `x86_64-linux`
-- `aarch64-linux`
-- `x86_64-darwin`
-- `aarch64-darwin`
+Run ` nix run github:Mic92/nix-update -- default --flake`
+
+Commit and push the changes.
 
 ## License
 
