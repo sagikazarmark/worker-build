@@ -1,6 +1,6 @@
 # worker-build Nix Flake
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/sagikazarmark/worker-build/ci.yaml?style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/sagikazarmark/worker-build/build.yaml?style=flat-square)
 
 Packaged [worker-build](https://github.com/cloudflare/workers-rs/tree/main/worker-build) from the Cloudflare [workers-rs](https://github.com/cloudflare/workers-rs) project in a Nix flake.
 
